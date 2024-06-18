@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z World - Zudio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        #menu {
+            color: white;
+        }
+
+        .navbar-nav {
+            padding-right: 20px;
+        }
+
+        .nav-item {
+            padding-right: 30px;
+            color: white;
+            font-size: 18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .navbar-brand {
+            padding-left: 20px;
+            margin: 5px;
+        }
+        #footer {
+            height: 48px;
+            background-color: black;
+            display: flex;
+        }
+        #footer1 {
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            padding-left: 160px;
+            padding-top: 12px;
+        }
+
+        #footer2 {
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        #footer2 a {
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+
+        h5 a {
+            position: relative;
+            text-decoration: none;
+            text-align: left;
+            padding-right: 60px;
+            right: 150px;
+            padding-bottom: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+
+        a:hover {
+            color: grey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #mynavbar a {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #mynavbar a:hover {
+            color: grey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #main {
+            padding-bottom: 35px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .li {
+            padding-top: 55px;
+
+        }
+
+        #main a {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+        }
+
+        #main h3 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        #main h2 {
+            padding-top: 40px;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: rgb(47, 46, 46);
+            text-transform: uppercase;
+        }
+
+        #main1 {
+            background-color: #EFEFEF;
+            padding-bottom: 25px;
+
+        }
+
+        #main1 p {
+            padding-top: 30px;
+
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 8px 200px 8px 10px;
+        }
+
+        #sec {
+            margin-left: 20px;
+        }
+
+        .one5 {
+            border: 1px solid white;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            background-color: #EFEFEF;
+        }
+
+        .one5 h1 {
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 1;
+        }
+
+        .one5 h2 {
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1;
+        }
+
+        .one5 h6 {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: black;
+            color: aliceblue;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1;
+            border: none;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+
+        .store {
+            font-size: 25px;
+            font-weight: 800;
+            color: rgb(77, 77, 77);
+        }
+        .next{
+            padding-top: 50px;
+        }
+        .next a{
+            text-decoration: none;
+            padding: 5px 10px 5px 10px; 
+            background-color: black;
+            color: white;
+        }
+        .next a:hover{
+            text-decoration: none;
+            background-color: #EFEFEF;
+            padding: 5px 10px 5px 10px; 
+            color: white;
+        }
+        /* .next a:{
+            text-decoration: none;
+            background-color: black;
+            padding: 5px 10px 5px 10px; 
+            color: white;
+        } */
+
+        /* #main h1 {
+            text-align: center;    
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 65px;
+            font-weight: 450;
+            text-transform: uppercase;
+        }
+        .text{
+            padding-top: 25px;
+        }
+        
+
+        
+        #main a:hover {
+            color: grey;
+        }
+        .link{
+            padding-top: 50px;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- navigation start from here -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="https://www.zudio.com/cdn/shop/files/logo_222x.png?v=1613519896" alt=""></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" id="mynavbar">
+
+                <div class="navbar-nav ms-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="Z-Stories.html">Z Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="Zudio1.html">#Zudio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="Near-You.html">Zudio Near You</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="Z-World.html">Z World</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation ends here -->
+    <div class="container-fluid" id="main">
+        <p class="li"><a href="zudio.html">Home</a><span>>></span><a href="Near-You.html">Store
+                Locator</a><span>>></span></p>
+        <h3>Store locator</h3>
+        <div class="container-fluid" id="main1">
+            <h2>FIND THE ZUDIO STORE CLOSEST TO YOU</h2>
+            <p>
+                <select name="" id="first">
+                    <option value="">Select State</option>
+                </select>
+                <select name="" id="sec">
+                    <option value="">Select City</option>
+                </select>
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h2 align="center" class="store">ALL STORES (396)</h2>
+        <div class="row" style="padding: 25px;">
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – AHMEDABAD, SATYAMEV ELITE<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>GF Shop No 101 to 106, Satyamev Elite, Bopal Bridge, Bopal Ambli Road, Opp BRTS , Ahmedabad
+                            - 380058 , Gujarat</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO–GURUGRAM, SOHNA ROAD<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>JMD Suberio - Sohna Road Opp Reach Airia Mall , Gurugram - 122103 , Haryana</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – DAVANAGERE, SS GARDENIA MALL<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Door No. 3993/23, S. S. Layout, Shamanur Road , Davanagere - 577004 , Karnataka</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – CHENNAI, PADUR<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Bhoomi & Buildings Pvt. Ltd. Stake- OMR , Chennai - 603103 , Tamil Nadu</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – IMPHAL, PHUNI MALL<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Ground floor & First floor, Airport Road, Sagolband Sayang Pukhri Mapal , Imphal - 795001 ,
+                            Manipur</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – PATNA, SAGUNA MALL<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Ashiana Mahendra Enclave, Saguna- Khagaul Road, Kaliket Nagar, Mainpura, Opp. Ananya Tata
+                            Motors , Patna - 801503 , Bihar</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – PUNE, SAI PARADISE<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Shop No. 6, 7, 8 & 9, Punawale , Pune - 411033 , Maharashtra</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – BENGALURU, KAMMANAHALLI<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>No.7 M-322, 1st Block, 80 Ft Road, HRBR Layout, Landmark- Diagonally Opposite to Starbucks ,
+                            Bengaluru - 560043 , Karnataka</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – PALAKKAD, ENGLISH CHURCH ROAD<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Bridge Tower , Palakkad - 678001 , Kerala</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – THIRUVANANTHAPURAM, MKP SQUARE<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Thulavila Karakkamandapam Nemom , Thiruvananthapuram - 695020 , Kerala</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO – BENGALURU, SHANTINIKETAN<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Nexus Shantiniketan Mall, Thigalarapalya, Krishnarajapura Hoodi , Bengaluru - 560048 ,
+                            Karnataka</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO - GAYA, NAGMATIA COLONY<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>6 Nagmatia Colony , Gaya - 823001 , Bihar</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO - MUMBAI, METRO JUNCTION MALL<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Shilphata Road, Netivali , Mumbai - 421306 , Maharashtra</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO - PANVEL, PRAJAPATI OPAL PANVEL<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Shop No. 3 to 7 Ground & First Floor Opp. Rajiv Gandhi Maidan, Sector No. 10 , New Panvel -
+                            410206 , Maharashtra</h6>
+                        <button>More details></button>
+            </div>
+            <div class="one5 col-12 col-sm-12 col-md-6 col-lg-4">
+                <h1>ZUDIO– SURAT, VIP ROAD VESU<h1>
+                        <h2>ADDRESS</h2>
+                        <h6>Corner Walk, Canal VIP Road, Circle , SURAT - 395007 , Gujarat</h6>
+                        <button>More details></button>
+            </div>
+        </div>
+    </div>
+    <div align="center" class="next" style="height: 100px;">
+        <a href="Near-You.html">&#8249;</a>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <a href="">7</a>
+        <a href="">8</a>
+        <a href="">...</a>
+        <a href="">27</a>
+        <a href="">28</a>
+        <a href="">&#8250;</a>
+    </div>
+    <div id="footer">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="footer1">
+            <p>COPYRIGHT © 2023 ZUDIO</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="footer2"> <a href="">Contact us-
+            tushar@.com</a></div>
+    </div>
+</body>
+
+</html>
